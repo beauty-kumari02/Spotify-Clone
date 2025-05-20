@@ -1,0 +1,318 @@
+*{
+    font-family: "Montserrat", serif;
+    background-color: black;
+    color: white;
+    overflow:hidden ;
+}
+.main{
+    display:flex;
+    height:100vh;
+    padding:0.5rem;
+}
+.sidebar{
+    background-color:black;
+    border-radius: 1rem;
+    width: 350px;
+    margin:0.5rem;
+}
+.main_content{
+    background-color: #121212;
+    flex:1;
+    border-radius: 1rem;
+    overflow:auto;
+    padding: 0 1.5rem 0 1.5rem;
+    
+}
+.music_player{
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 72px;
+}
+.nav-option a{
+    color:white;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option i{
+    font-size: 1.25rem;
+}
+.nav-option{
+    line-height: 2.5rem;
+    opacity:0.7;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option:hover{
+    opacity: 1;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.library{
+    background-color:#121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top:0.5rem;
+    padding:0.5rem 0.75rem;
+}
+.lib-options img{
+    width: 1.25rem;
+    height: 1.25rem;
+}
+.icons{
+    font-size: 1.35rem;
+    display:flex;
+}
+.icons i{
+    margin-right:1rem;
+    opacity: 0.7;
+}
+.icons i:hover{
+    opacity:1;
+}
+.boxes{
+    background-color: #232323;
+    height: 8rem;
+    border-radius:0.75rem;
+    margin:0.75rem 0 1.75rem 0;
+    padding:0.75rem 1rem;
+}
+.box-p1{
+    font-size:1rem;
+    font-weight: 500;
+}
+.box-p2{
+    font-size: 0.85rem;
+    opacity:0.9;
+}
+.badge{
+    background-color: #fff;
+    border:none;
+    border-radius: 6.25rem;
+    padding:0.25rem 1rem;
+    font-weight:700;
+    color:black;
+    margin-top:0.5rem;
+    height:2rem;
+    width: fit-content;
+    margin-bottom: 0.75rem;
+
+}
+.sticky-nav{
+    position:sticky;
+    top:0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem 0 1rem 0;
+    z-index: 10;
+}
+.sticky-nav-icons{
+    margin-left:0.75rem;
+}
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav-item{
+    margin-right:1rem;
+}
+.dark-badge{
+    background-color: black;
+    color: white;
+}
+@media (max-width: 1000px) {
+    .hide{
+        display:none;
+    }
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #232323;
+    width:150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left:1.5rem;
+    margin-top: 1rem;
+    margin-bottom:1rem;
+}
+.card-img{
+    width:100%;
+    border-radius: 0.5rem;
+}
+.card-title{
+    font-weight: 600;
+}
+.card-info{
+    font-size:0.7rem;
+    opacity:0.8;
+}
+.cards-one{
+    display: flex;
+}
+.footer{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width:90%;
+    height:30%;
+    border-top:1px solid white;
+    opacity:0.4;
+}
+.player .player-control-icon{
+    width: 15px;
+    height: 15px;
+    
+    margin-right: 30px;
+    margin-top:0.75rem;
+
+}
+.player{
+    /* display: flex;
+    justify-content: center; */
+    width:50%;
+}
+.player .player-controls{
+    display: flex;
+    justify-content: center;
+    margin-left:14px;
+    margin-bottom: 4px;
+    opacity: 0.8;
+}
+.player-controls:hover{
+    opacity:1;
+}
+.player .progress-bar{
+    display: flex;
+    justify-content: center;
+    margin-right: 12px;
+}
+.album{
+    width:25%;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.album img{
+    width:50px;
+    height: 50px;
+    padding: 10px;
+}
+.controls{
+    
+    justify-content: flex-end;
+    width:25%;
+    width:290px;
+    height: 32px;
+    margin-right: 0px;
+    margin-top:10px;
+   
+}
+.music_player{
+    display: flex;
+}
+.controls img{
+    width: 20px;
+    height: 20px;
+    margin-right:0.45rem;
+    margin-top: 0.75rem;
+    opacity:0.7;
+    
+}
+.controls .bright:hover{
+    width: 21px;
+    height: 21px;
+    opacity:1;
+}
+.controls .vol:hover{
+    opacity:1;
+    
+}
+.head{
+    display: flex;
+    flex-direction: column;
+}
+.big{
+    
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 4px;
+    opacity: 0.9;
+
+   
+}
+.big:hover{
+    text-decoration: underline;
+    opacity:1;
+}
+.small{
+   
+    font-size: 10px;
+   margin-top:0px;
+   margin-left:0px;
+   
+    color: #fff;
+    opacity: 0.8;
+    font-weight: 400;
+   
+}
+.small:hover{
+    text-decoration: underline;
+    opacity:1;
+}
+.album .heart{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 50px;
+    opacity: 0.7;
+}
+.album .rectangle{
+    width:25px;
+    height:25px;
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
+.plackback{
+    width:60%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.plackback::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+.plackback::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.8rem;
+    width:0.8rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
